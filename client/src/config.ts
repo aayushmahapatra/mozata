@@ -1,0 +1,1 @@
+export const MARKETPLACE_SERVER = process.env.REACT_APP_MARKETPLACE_SERVER;

@@ -1,0 +1,572 @@
+[
+  {
+    "id": 1,
+    "name": "Tasty Bites",
+    "location": "123 Main St, Cityville",
+    "dishes": [
+      {
+        "id": 11,
+        "name": "Spicy Chicken Curry",
+        "price": 12.99
+      },
+      {
+        "id": 12,
+        "name": "Garlic Butter Naan",
+        "price": 3.99
+      },
+      {
+        "id": 13,
+        "name": "Vegetable Biryani",
+        "price": 10.99
+      },
+      {
+        "id": 14,
+        "name": "Paneer Tikka",
+        "price": 8.99
+      },
+      {
+        "id": 15,
+        "name": "Mango Lassi",
+        "price": 4.99
+      },
+      {
+        "id": 16,
+        "name": "Butter Chicken",
+        "price": 14.99
+      },
+      {
+        "id": 17,
+        "name": "Samosa Chaat",
+        "price": 6.99
+      },
+      {
+        "id": 18,
+        "name": "Chole Bhature",
+        "price": 9.99
+      },
+      {
+        "id": 19,
+        "name": "Papdi Chaat",
+        "price": 7.99
+      },
+      {
+        "id": 1000,
+        "name": "Gulab Jamun",
+        "price": 5.99
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Savory Delights",
+    "location": "456 Oak St, Townsville",
+    "dishes": [
+      {
+        "id": 21,
+        "name": "Grilled Salmon",
+        "price": 18.99
+      },
+      {
+        "id": 22,
+        "name": "Caesar Salad",
+        "price": 8.99
+      },
+      {
+        "id": 23,
+        "name": "Mushroom Risotto",
+        "price": 12.99
+      },
+      {
+        "id": 24,
+        "name": "Caprese Pizza",
+        "price": 14.99
+      },
+      {
+        "id": 25,
+        "name": "Tiramisu",
+        "price": 6.99
+      },
+      {
+        "id": 26,
+        "name": "Pesto Pasta",
+        "price": 11.99
+      },
+      {
+        "id": 27,
+        "name": "Bruschetta",
+        "price": 5.99
+      },
+      {
+        "id": 28,
+        "name": "Garlic Shrimp Scampi",
+        "price": 16.99
+      },
+      {
+        "id": 29,
+        "name": "Margherita Pizza",
+        "price": 13.99
+      },
+      {
+        "id": 20,
+        "name": "Chocolate Fondue",
+        "price": 9.99
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Culinary Haven",
+    "location": "789 Pine St, Foodtown",
+    "dishes": [
+      {
+        "id": 31,
+        "name": "Spicy Chicken Curry",
+        "price": 12.99
+      },
+      {
+        "id": 32,
+        "name": "Garlic Butter Naan",
+        "price": 3.99
+      },
+      {
+        "id": 33,
+        "name": "Vegetable Biryani",
+        "price": 10.99
+      },
+      {
+        "id": 34,
+        "name": "Paneer Tikka",
+        "price": 8.99
+      },
+      {
+        "id": 35,
+        "name": "Mango Lassi",
+        "price": 4.99
+      },
+      {
+        "id": 36,
+        "name": "Butter Chicken",
+        "price": 14.99
+      },
+      {
+        "id": 37,
+        "name": "Samosa Chaat",
+        "price": 6.99
+      },
+      {
+        "id": 38,
+        "name": "Chole Bhature",
+        "price": 9.99
+      },
+      {
+        "id": 39,
+        "name": "Papdi Chaat",
+        "price": 7.99
+      },
+      {
+        "id": 30,
+        "name": "Gulab Jamun",
+        "price": 5.99
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Flavor Fusion",
+    "location": "101 Maple Ave, Gourmet City",
+    "dishes": [
+      {
+        "id": 41,
+        "name": "Grilled Salmon",
+        "price": 18.99
+      },
+      {
+        "id": 42,
+        "name": "Caesar Salad",
+        "price": 8.99
+      },
+      {
+        "id": 43,
+        "name": "Mushroom Risotto",
+        "price": 12.99
+      },
+      {
+        "id": 44,
+        "name": "Caprese Pizza",
+        "price": 14.99
+      },
+      {
+        "id": 45,
+        "name": "Tiramisu",
+        "price": 6.99
+      },
+      {
+        "id": 46,
+        "name": "Pesto Pasta",
+        "price": 11.99
+      },
+      {
+        "id": 47,
+        "name": "Bruschetta",
+        "price": 5.99
+      },
+      {
+        "id": 48,
+        "name": "Garlic Shrimp Scampi",
+        "price": 16.99
+      },
+      {
+        "id": 49,
+        "name": "Margherita Pizza",
+        "price": 13.99
+      },
+      {
+        "id": 40,
+        "name": "Chocolate Fondue",
+        "price": 9.99
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Gastronomy Galore",
+    "location": "202 Elm Blvd, Cuisineville",
+    "dishes": [
+      {
+        "id": 51,
+        "name": "Spicy Chicken Curry",
+        "price": 12.99
+      },
+      {
+        "id": 52,
+        "name": "Garlic Butter Naan",
+        "price": 3.99
+      },
+      {
+        "id": 53,
+        "name": "Vegetable Biryani",
+        "price": 10.99
+      },
+      {
+        "id": 54,
+        "name": "Paneer Tikka",
+        "price": 8.99
+      },
+      {
+        "id": 55,
+        "name": "Mango Lassi",
+        "price": 4.99
+      },
+      {
+        "id": 56,
+        "name": "Butter Chicken",
+        "price": 14.99
+      },
+      {
+        "id": 57,
+        "name": "Samosa Chaat",
+        "price": 6.99
+      },
+      {
+        "id": 58,
+        "name": "Chole Bhature",
+        "price": 9.99
+      },
+      {
+        "id": 59,
+        "name": "Papdi Chaat",
+        "price": 7.99
+      },
+      {
+        "id": 50,
+        "name": "Gulab Jamun",
+        "price": 5.99
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Epicurean Eats",
+    "location": "303 Cedar Ln, Tastyburg",
+    "dishes": [
+      {
+        "id": 61,
+        "name": "Grilled Salmon",
+        "price": 18.99
+      },
+      {
+        "id": 62,
+        "name": "Caesar Salad",
+        "price": 8.99
+      },
+      {
+        "id": 63,
+        "name": "Mushroom Risotto",
+        "price": 12.99
+      },
+      {
+        "id": 64,
+        "name": "Caprese Pizza",
+        "price": 14.99
+      },
+      {
+        "id": 65,
+        "name": "Tiramisu",
+        "price": 6.99
+      },
+      {
+        "id": 66,
+        "name": "Pesto Pasta",
+        "price": 11.99
+      },
+      {
+        "id": 67,
+        "name": "Bruschetta",
+        "price": 5.99
+      },
+      {
+        "id": 68,
+        "name": "Garlic Shrimp Scampi",
+        "price": 16.99
+      },
+      {
+        "id": 69,
+        "name": "Margherita Pizza",
+        "price": 13.99
+      },
+      {
+        "id": 60,
+        "name": "Chocolate Fondue",
+        "price": 9.99
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Palate Pleasers",
+    "location": "404 Birch Rd, Delightfulville",
+    "dishes": [
+      {
+        "id": 71,
+        "name": "Spicy Chicken Curry",
+        "price": 12.99
+      },
+      {
+        "id": 72,
+        "name": "Garlic Butter Naan",
+        "price": 3.99
+      },
+      {
+        "id": 73,
+        "name": "Vegetable Biryani",
+        "price": 10.99
+      },
+      {
+        "id": 74,
+        "name": "Paneer Tikka",
+        "price": 8.99
+      },
+      {
+        "id": 75,
+        "name": "Mango Lassi",
+        "price": 4.99
+      },
+      {
+        "id": 76,
+        "name": "Butter Chicken",
+        "price": 14.99
+      },
+      {
+        "id": 77,
+        "name": "Samosa Chaat",
+        "price": 6.99
+      },
+      {
+        "id": 78,
+        "name": "Chole Bhature",
+        "price": 9.99
+      },
+      {
+        "id": 79,
+        "name": "Papdi Chaat",
+        "price": 7.99
+      },
+      {
+        "id": 70,
+        "name": "Gulab Jamun",
+        "price": 5.99
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Mouthwatering Munchies",
+    "location": "505 Spruce Ct, Flavor City",
+    "dishes": [
+      {
+        "id": 81,
+        "name": "Grilled Salmon",
+        "price": 18.99
+      },
+      {
+        "id": 82,
+        "name": "Caesar Salad",
+        "price": 8.99
+      },
+      {
+        "id": 83,
+        "name": "Mushroom Risotto",
+        "price": 12.99
+      },
+      {
+        "id": 84,
+        "name": "Caprese Pizza",
+        "price": 14.99
+      },
+      {
+        "id": 85,
+        "name": "Tiramisu",
+        "price": 6.99
+      },
+      {
+        "id": 86,
+        "name": "Pesto Pasta",
+        "price": 11.99
+      },
+      {
+        "id": 87,
+        "name": "Bruschetta",
+        "price": 5.99
+      },
+      {
+        "id": 88,
+        "name": "Garlic Shrimp Scampi",
+        "price": 16.99
+      },
+      {
+        "id": 89,
+        "name": "Margherita Pizza",
+        "price": 13.99
+      },
+      {
+        "id": 80,
+        "name": "Chocolate Fondue",
+        "price": 9.99
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Yummy Oasis",
+    "location": "606 Fir Dr, Culinary Town",
+    "dishes": [
+      {
+        "id": 91,
+        "name": "Spicy Chicken Curry",
+        "price": 12.99
+      },
+      {
+        "id": 92,
+        "name": "Garlic Butter Naan",
+        "price": 3.99
+      },
+      {
+        "id": 93,
+        "name": "Vegetable Biryani",
+        "price": 10.99
+      },
+      {
+        "id": 94,
+        "name": "Paneer Tikka",
+        "price": 8.99
+      },
+      {
+        "id": 95,
+        "name": "Mango Lassi",
+        "price": 4.99
+      },
+      {
+        "id": 96,
+        "name": "Butter Chicken",
+        "price": 14.99
+      },
+      {
+        "id": 97,
+        "name": "Samosa Chaat",
+        "price": 6.99
+      },
+      {
+        "id": 98,
+        "name": "Chole Bhature",
+        "price": 9.99
+      },
+      {
+        "id": 99,
+        "name": "Papdi Chaat",
+        "price": 7.99
+      },
+      {
+        "id": 90,
+        "name": "Gulab Jamun",
+        "price": 5.99
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Delicious Destination",
+    "location": "707 Redwood Way, Savory Springs",
+    "dishes": [
+      {
+        "id": 101,
+        "name": "Grilled Salmon",
+        "price": 18.99
+      },
+      {
+        "id": 102,
+        "name": "Caesar Salad",
+        "price": 8.99
+      },
+      {
+        "id": 103,
+        "name": "Mushroom Risotto",
+        "price": 12.99
+      },
+      {
+        "id": 104,
+        "name": "Caprese Pizza",
+        "price": 14.99
+      },
+      {
+        "id": 105,
+        "name": "Tiramisu",
+        "price": 6.99
+      },
+      {
+        "id": 106,
+        "name": "Pesto Pasta",
+        "price": 11.99
+      },
+      {
+        "id": 107,
+        "name": "Bruschetta",
+        "price": 5.99
+      },
+      {
+        "id": 108,
+        "name": "Garlic Shrimp Scampi",
+        "price": 16.99
+      },
+      {
+        "id": 109,
+        "name": "Margherita Pizza",
+        "price": 13.99
+      },
+      {
+        "id": 100,
+        "name": "Chocolate Fondue",
+        "price": 9.99
+      }
+    ]
+  }
+]
