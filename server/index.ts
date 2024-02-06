@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import session from "express-session";
-import { MONGODB_URI, PORT, SESSION_SECRET_KEY } from "./config";
+import { CORS_ORIGIN, MONGODB_URI, PORT, SESSION_SECRET_KEY } from "./config";
 import userRoutes from "./routes/user.route";
 import restaurantRoutes from "./routes/restaurant.route";
 import dishRoutes from "./routes/dish.route";
@@ -22,7 +22,7 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: CORS_ORIGIN, credentials: true }));
 app.use(
   session({
     secret: SESSION_SECRET_KEY,
