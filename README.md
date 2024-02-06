@@ -41,6 +41,8 @@ You can follow these steps to setup the server:
   MONGODB_URI=xxxx
   JWT_SECRET_KEY=xxxx
   SESSION_SECRET_KEY=xxxx
+  # for local setup use http://localhost:3000
+  CORS_ORIGIN=xxxx
   ```
 6. Start the server
   ```sh
