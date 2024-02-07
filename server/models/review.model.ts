@@ -13,7 +13,7 @@ const reviewSchema = new mongoose.Schema({
   comment: {
     type: String,
   },
-  // You can have a reference to either Restaurant or Dish, depending on where the review is left
+  // you can have a reference to either restaurant or dish, depending on where the review is left
   restaurant: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Restaurant",

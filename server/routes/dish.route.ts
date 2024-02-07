@@ -1,11 +1,10 @@
-// userRoutes.js
 import express from "express";
 import { Dish } from "../models/dish.model";
 import isAuthenticated from "../middlewares/authorization.middleware";
 
 const router = express.Router();
 
-// Create a new dish
+// create a new dish
 router.post("/add", isAuthenticated(), async (req, res) => {
   try {
     const { name, description, price, restaurant } = req.body;
@@ -25,7 +24,7 @@ router.post("/add", isAuthenticated(), async (req, res) => {
   }
 });
 
-// Search dishes by name or description
+// search dishes by name or description
 router.get("/search", isAuthenticated(), async (req, res) => {
   try {
     const keyword = req.query.keyword;
@@ -34,7 +33,7 @@ router.get("/search", isAuthenticated(), async (req, res) => {
       return res.status(400).json({ error: "Keyword is required for search" });
     }
 
-    const regex = new RegExp(String(keyword), "i"); // Case-insensitive search
+    const regex = new RegExp(String(keyword), "i"); // case-insensitive search
 
     const searchResults = await Dish.find({
       $or: [{ name: { $regex: regex } }],
@@ -47,7 +46,7 @@ router.get("/search", isAuthenticated(), async (req, res) => {
   }
 });
 
-// Get all dishes
+// get all dishes
 router.get("/all", isAuthenticated(), async (req, res) => {
   try {
     const dishes = await Dish.find().populate("restaurant");
@@ -58,7 +57,7 @@ router.get("/all", isAuthenticated(), async (req, res) => {
   }
 });
 
-// Get a single dish by ID
+// get a single dish by id
 router.get("/:id", isAuthenticated(), async (req, res) => {
   try {
     const dishId = req.params.id;
@@ -75,7 +74,7 @@ router.get("/:id", isAuthenticated(), async (req, res) => {
   }
 });
 
-// Delete a dish by ID
+// delete a dish by id
 router.delete("/:id", isAuthenticated(), async (req, res) => {
   try {
     const dishId = req.params.id;

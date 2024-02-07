@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { DEFAULT_IMAGE } from "../config";
 
 interface IRestaurantCard {
   restaurant: any;
@@ -8,8 +9,8 @@ const RestaurantCard: FC<IRestaurantCard> = ({ restaurant }) => {
   return (
     <section className="border border-gray-300 w-full max-w-60 md:w-60 rounded cursor-pointer hover:bg-gray-300">
       <img
-        src="https://bafybeiabe6kgu3ais5voe3zkyzurjfixg4cu57v4yh3dj7ijnsnctta2pq.ipfs.sphn.link/burger-hotdog.png"
-        alt="food"
+        src={DEFAULT_IMAGE}
+        alt={restaurant.name}
         className="w-full h-32 bg-center bg-contain"
       />
       <section className="p-4 text-zinc-900">

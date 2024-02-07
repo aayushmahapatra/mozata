@@ -19,7 +19,6 @@ const Navbar = () => {
   const handleSignout = async () => {
     const signoutRes = await signout();
     if (signoutRes.success) {
-      console.log(signoutRes.response);
       localStorage.removeItem("mozata-session");
       notify();
       navigate("/");

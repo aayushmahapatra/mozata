@@ -1,11 +1,10 @@
-// userRoutes.js
 import express from "express";
 import { Restaurant } from "../models/restaurant.model";
 import isAuthenticated from "../middlewares/authorization.middleware";
 
 const router = express.Router();
 
-// Create a new restaurant
+// create a new restaurant
 router.post("/add", isAuthenticated(), async (req, res) => {
   try {
     const { name, description, cuisine, address, menu } = req.body;
@@ -26,7 +25,7 @@ router.post("/add", isAuthenticated(), async (req, res) => {
   }
 });
 
-// Get all restaurants
+// get all restaurants
 router.get("/all", isAuthenticated(), async (_req, res) => {
   try {
     const restaurants = await Restaurant.find().populate("menu");
@@ -37,7 +36,7 @@ router.get("/all", isAuthenticated(), async (_req, res) => {
   }
 });
 
-// Get a single restaurant by ID
+// get a single restaurant by ID
 router.get("/:id", isAuthenticated(), async (req, res) => {
   try {
     const restaurantId = req.params.id;
@@ -54,7 +53,7 @@ router.get("/:id", isAuthenticated(), async (req, res) => {
   }
 });
 
-// Delete a restaurant by ID
+// delete a restaurant by ID
 router.delete("/:id", isAuthenticated(), async (req, res) => {
   try {
     const restaurantId = req.params.id;

@@ -24,7 +24,6 @@ const orderSlice = createSlice({
       );
 
       if (currentOrder) {
-        // If order for the restaurant already exists, update it
         const existingItem = currentOrder.items.find((i) => i.id === item.id);
 
         if (existingItem) {
@@ -33,7 +32,6 @@ const orderSlice = createSlice({
           currentOrder.items.push(item);
         }
       } else {
-        // If no order for the restaurant exists, create a new order
         state.orders.push({
           restaurantId,
           restaurantName,
@@ -41,7 +39,6 @@ const orderSlice = createSlice({
         });
       }
 
-      // Update total price
       state.total += item.price * item.quantity;
     },
     removeItemFromOrder: (
@@ -59,20 +56,18 @@ const orderSlice = createSlice({
         );
 
         if (selectedItem) {
-          // Reduce the quantity by 1
           selectedItem.quantity -= 1;
 
-          // Update total price
           state.total -= selectedItem.price;
 
-          // Remove the item if quantity becomes zero
+          // remove the item if quantity becomes zero
           if (selectedItem.quantity === 0) {
             currentOrder.items = currentOrder.items.filter(
               (item) => item.id !== itemId
             );
           }
 
-          // Remove the order if there are no items left
+          // remove the order if there are no items left
           if (currentOrder.items.length === 0) {
             state.orders = state.orders.filter(
               (order) => order.restaurantId !== restaurantId

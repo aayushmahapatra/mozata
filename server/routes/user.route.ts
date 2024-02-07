@@ -1,27 +1,27 @@
-// userRoutes.js
 import express from "express";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { User } from "../models/user.model";
-import { JWT_SECRET_KEY } from "../config";
+import { JWT_EXPIRES_IN, JWT_SECRET_KEY } from "../config";
 import isAuthenticated from "../middlewares/authorization.middleware";
 
 const router = express.Router();
 
+// signup
 router.post("/signup", async (req, res) => {
   try {
     const { email, phone, name, password, address } = req.body;
 
-    // Check if user already exists
+    // check if user already exists
     const existingUser = await User.findOne({ $or: [{ email }, { phone }] });
     if (existingUser) {
       return res.status(400).json({ error: "User already exists." });
     }
 
-    // Hash the password
+    // hash the password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Create a new user
+    // create a new user
     const newUser = new User({
       email,
       phone,
@@ -39,31 +39,31 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-// Signin
+// signin
 router.post("/signin", async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Find user by email
+    // find user by email
     const user = await User.findOne({ email });
 
     if (!user) {
       return res.status(401).json({ error: "Invalid email or password." });
     }
 
-    // Compare passwords
+    // compare passwords
     const isPasswordValid = await bcrypt.compare(password, user.password);
 
     if (!isPasswordValid) {
       return res.status(401).json({ error: "Invalid email or password." });
     }
 
-    // Create and send JWT token
+    // create and send JWT token
     const token = jwt.sign(
       { userId: user._id },
       JWT_SECRET_KEY || "yourSecretKey",
       {
-        expiresIn: "1h",
+        expiresIn: JWT_EXPIRES_IN,
       }
     );
     req.session.token = token;
@@ -81,6 +81,7 @@ router.post("/signin", async (req, res) => {
   }
 });
 
+// signout
 router.get("/signout", isAuthenticated(), (req, res) => {
   if (!req.session.token) {
     res.status(200).json({ message: "Already signed out" });

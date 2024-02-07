@@ -5,6 +5,7 @@ import {
   removeItemFromOrder,
 } from "../redux/order/order.reducers";
 import { IRootState } from "../redux/root-state.interface";
+import { DEFAULT_IMAGE } from "../config";
 
 interface IDishCard {
   restaurantId: string;
@@ -47,8 +48,8 @@ const DishCard: FC<IDishCard> = ({
   return (
     <section className="border border-gray-300 w-60 rounded cursor-pointer shadow hover:bg-gray-300">
       <img
-        src="https://bafybeiabe6kgu3ais5voe3zkyzurjfixg4cu57v4yh3dj7ijnsnctta2pq.ipfs.sphn.link/burger-hotdog.png"
-        alt="food"
+        src={DEFAULT_IMAGE}
+        alt={name}
         className="w-full h-32 bg-center bg-contain"
       />
       <section className="p-2 ">

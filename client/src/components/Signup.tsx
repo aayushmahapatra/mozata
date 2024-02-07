@@ -8,15 +8,15 @@ interface ISignup {
 
 const Signup: FC<ISignup> = ({ setPage }) => {
   const [formData, setFormData] = useState({
-    email: "arjun@gmail.com",
-    phone: "111-222-4444",
-    name: "Arjun",
-    password: "arjun123",
+    email: "",
+    phone: "",
+    name: "",
+    password: "",
     address: {
-      street: "101 Dalal Street",
-      city: "Mumbai",
-      state: "Maharashtra",
-      zipCode: 30033,
+      street: "",
+      city: "",
+      state: "",
+      zipCode: 0,
     },
   });
 
@@ -34,7 +34,6 @@ const Signup: FC<ISignup> = ({ setPage }) => {
   const handleSignup = async () => {
     const signupRes = await signup(formData);
     if (signupRes.success) {
-      console.log(signupRes.response);
       setPage(AuthEnum.SIGNIN);
     }
   };
